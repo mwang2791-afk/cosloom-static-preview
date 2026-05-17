@@ -5881,15 +5881,15 @@ body.cosloom-concept-cinematic-costume-house .service-path-card__body .button {
 }
 
 body.cosloom-concept-cinematic-costume-house .hero-variant--ornate .concept-hero__media .hero__poster {
-  object-position: 50% 34%;
-  transform: translateX(18%) scale(1.26);
-  transform-origin: 50% 34%;
+  object-position: 50% 56%;
+  transform: translateX(18%) translateY(-5%) scale(1.18);
+  transform-origin: 50% 56%;
   animation: none;
 }
 
 @media (max-width: 1180px) {
   body.cosloom-concept-cinematic-costume-house .hero-variant--ornate .concept-hero__media .hero__poster {
-    transform: translateX(16%) scale(1.24);
+    transform: translateX(15%) translateY(-4%) scale(1.16);
   }
 
   body.cosloom-concept-cinematic-costume-house .service-path-card {
@@ -5918,8 +5918,9 @@ body.cosloom-concept-cinematic-costume-house .hero-variant--ornate .concept-hero
 
 @media (max-width: 760px) {
   body.cosloom-concept-cinematic-costume-house .hero-variant--ornate .concept-hero__media .hero__poster {
-    object-position: 50% 26%;
-    transform: translateX(12%) scale(1.18);
+    object-position: 50% 48%;
+    transform: translateX(10%) translateY(-3%) scale(1.12);
+    transform-origin: 50% 48%;
   }
 
   body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card,
