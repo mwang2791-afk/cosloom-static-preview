@@ -12,6 +12,7 @@ These images are localized prototype references for the CosLoom B visual system.
 
 | File | Prototype use | Source reference |
 | --- | --- | --- |
+| `hero-green-baroque-gown.jpg` | Homepage hero / cinematic baroque cosplay portrait | `https://jp.pinterest.com/pin/457326537171664794/` |
 | `rococo-cosplay-parasol.jpg` | Rococo / anime court styling | `https://jp.pinterest.com/pin/457326537171664794/` |
 | `royal-tea-party-dress.jpg` | Light custom dress / atelier hero | `https://jp.pinterest.com/pin/kakakiz-9997--218283913184451726/` |
 | `rose-gold-court-gown.jpg` | Baroque gown / FAQ and showroom mood | `https://www.pinterest.com/pin/68891069279330359/` |
