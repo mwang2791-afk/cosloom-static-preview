@@ -64,4 +64,48 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  document.querySelectorAll('[data-filter-controls]').forEach((controls) => {
+    const targetId = controls.getAttribute('data-filter-controls');
+    const list = targetId ? document.getElementById(targetId) : null;
+
+    if (!list) {
+      return;
+    }
+
+    const cards = Array.from(list.querySelectorAll('[data-filter-card]'));
+    const empty = list.parentElement ? list.parentElement.querySelector('[data-filter-empty]') : null;
+
+    controls.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-filter-value]');
+
+      if (!button) {
+        return;
+      }
+
+      const value = button.getAttribute('data-filter-value') || 'all';
+      let visibleCount = 0;
+
+      controls.querySelectorAll('[data-filter-value]').forEach((item) => {
+        const active = item === button;
+        item.classList.toggle('is-active', active);
+        item.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+
+      cards.forEach((card) => {
+        const tags = (card.getAttribute('data-tags') || '').split(/\s+/).filter(Boolean);
+        const visible = 'all' === value || tags.includes(value);
+
+        card.hidden = !visible;
+
+        if (visible) {
+          visibleCount += 1;
+        }
+      });
+
+      if (empty) {
+        empty.hidden = 0 !== visibleCount;
+      }
+    });
+  });
 });
