@@ -5620,13 +5620,14 @@ body.cosloom-concept-cinematic-costume-house .route-page-hero h1 {
 
   body.cosloom-concept-cinematic-costume-house .concept-hero__copy {
     top: 118px !important;
-    right: 14px !important;
+    right: auto !important;
     bottom: auto !important;
     left: 14px !important;
-    width: auto !important;
-    max-width: none !important;
+    width: calc(100vw - 32px) !important;
+    max-width: 358px !important;
     height: auto !important;
     min-height: 0 !important;
+    overflow: hidden;
   }
 
   body.cosloom-concept-cinematic-costume-house .concept-hero__copy h1 {
@@ -5635,6 +5636,10 @@ body.cosloom-concept-cinematic-costume-house .route-page-hero h1 {
 
   body.cosloom-concept-cinematic-costume-house .hero__trust-line {
     margin-top: 18px;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .hero__subhead {
+    max-width: 29ch;
   }
 
   body.cosloom-concept-cinematic-costume-house .cosloom-home > .concept-section.section-shell {
