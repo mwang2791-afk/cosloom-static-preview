@@ -5698,3 +5698,251 @@ body.cosloom-concept-cinematic-costume-house .route-page-hero h1 {
     top: 108px !important;
   }
 }
+
+/* B Final v2.1: network image system, expanded project archive, and clearer service routes. */
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded {
+  gap: clamp(14px, 1.45vw, 22px);
+  margin-top: clamp(8px, 1vw, 16px);
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card,
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(2),
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(3),
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(4) {
+  grid-column: span 3;
+  min-height: clamp(370px, 28vw, 520px);
+  margin-top: 0;
+  transform: none;
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(1),
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(2) {
+  grid-column: span 6;
+  min-height: clamp(520px, 39vw, 690px);
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(7),
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(12) {
+  grid-column: span 6;
+  min-height: clamp(430px, 34vw, 610px);
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card::after {
+  opacity: 0.18;
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:hover::after,
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:focus-within::after {
+  opacity: 1;
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card img {
+  filter: saturate(0.58) contrast(1.05) brightness(0.88);
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(1) img,
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(2) img,
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(7) img,
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(12) img {
+  filter: saturate(0.64) contrast(1.06) brightness(0.9);
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card__content {
+  gap: 9px;
+  padding: clamp(18px, 2.2vw, 28px);
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card__content h3 {
+  max-width: 460px;
+  font-size: clamp(1.4rem, 2vw, 2.25rem);
+  line-height: 1;
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card__content p {
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-meta-list {
+  gap: 7px;
+  margin-top: 8px;
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-meta-list div {
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 10px;
+  padding-top: 8px;
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-meta-list dt {
+  font-size: 0.56rem;
+  letter-spacing: 0.13em;
+}
+
+body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-meta-list dd {
+  font-size: 0.72rem;
+  line-height: 1.42;
+}
+
+body.cosloom-concept-cinematic-costume-house .service-paths-section {
+  position: relative;
+  padding-top: clamp(64px, 7vw, 108px);
+}
+
+body.cosloom-concept-cinematic-costume-house .service-paths-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(18px, 2.2vw, 30px);
+}
+
+body.cosloom-concept-cinematic-costume-house .service-path-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.52fr) minmax(0, 1fr);
+  min-height: clamp(520px, 38vw, 680px);
+  border: 1px solid rgba(37, 34, 31, 0.16);
+  border-radius: 4px;
+  background:
+    linear-gradient(135deg, rgba(250, 248, 243, 0.94), rgba(224, 215, 202, 0.48)),
+    var(--surface);
+  box-shadow: 0 26px 80px rgba(37, 34, 31, 0.12);
+  overflow: hidden;
+}
+
+body.cosloom-concept-cinematic-costume-house .service-path-card figure {
+  min-height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #d8cfc3;
+}
+
+body.cosloom-concept-cinematic-costume-house .service-path-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.58) contrast(1.03) brightness(0.92);
+  transform: scale(1.01);
+}
+
+body.cosloom-concept-cinematic-costume-house .service-path-card__body {
+  display: grid;
+  align-content: end;
+  gap: clamp(16px, 2vw, 22px);
+  padding: clamp(28px, 3.4vw, 48px);
+}
+
+body.cosloom-concept-cinematic-costume-house .service-path-card__body span {
+  color: var(--b-plum);
+  font-size: 0.68rem;
+  font-weight: 820;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+body.cosloom-concept-cinematic-costume-house .service-path-card__body h3 {
+  max-width: 520px;
+  margin: 0;
+  color: var(--b-charcoal);
+  font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  font-size: clamp(2.7rem, 4.6vw, 4.7rem);
+  font-weight: 520;
+  line-height: 0.9;
+}
+
+body.cosloom-concept-cinematic-costume-house .service-path-card__body p {
+  max-width: 520px;
+  margin: 0;
+  color: rgba(37, 34, 31, 0.68);
+  font-size: 0.98rem;
+  line-height: 1.68;
+}
+
+body.cosloom-concept-cinematic-costume-house .service-path-card__body ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body.cosloom-concept-cinematic-costume-house .service-path-card__body li {
+  padding: 8px 10px 7px;
+  border: 1px solid rgba(37, 34, 31, 0.13);
+  color: rgba(37, 34, 31, 0.62);
+  font-size: 0.62rem;
+  font-weight: 760;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+body.cosloom-concept-cinematic-costume-house .service-path-card__body .button {
+  width: max-content;
+}
+
+body.cosloom-concept-cinematic-costume-house .hero-variant--ornate .concept-hero__media .hero__poster {
+  object-position: 50% 34%;
+  transform: translateX(18%) scale(1.26);
+  transform-origin: 50% 34%;
+  animation: none;
+}
+
+@media (max-width: 1180px) {
+  body.cosloom-concept-cinematic-costume-house .hero-variant--ornate .concept-hero__media .hero__poster {
+    transform: translateX(16%) scale(1.24);
+  }
+
+  body.cosloom-concept-cinematic-costume-house .service-path-card {
+    grid-template-columns: 1fr;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .service-path-card figure {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  body.cosloom-concept-cinematic-costume-house .service-paths-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card,
+  body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(1),
+  body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(2),
+  body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(7),
+  body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(12) {
+    grid-column: auto;
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 760px) {
+  body.cosloom-concept-cinematic-costume-house .hero-variant--ornate .concept-hero__media .hero__poster {
+    object-position: 50% 26%;
+    transform: translateX(12%) scale(1.18);
+  }
+
+  body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card,
+  body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(1),
+  body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(2),
+  body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(7),
+  body.cosloom-concept-cinematic-costume-house .projects-section .project-grid--expanded .project-card:nth-child(12) {
+    min-height: 440px;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .service-path-card {
+    min-height: 0;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .service-path-card figure {
+    min-height: 260px;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .service-path-card__body {
+    padding: 24px 20px 26px;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .service-path-card__body h3 {
+    font-size: clamp(2.28rem, 12vw, 3.2rem);
+  }
+}
