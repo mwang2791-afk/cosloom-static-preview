@@ -5620,11 +5620,11 @@ body.cosloom-concept-cinematic-costume-house .route-page-hero h1 {
 
   body.cosloom-concept-cinematic-costume-house .concept-hero__copy {
     top: 118px !important;
-    right: 14px;
+    right: 14px !important;
     bottom: auto !important;
-    left: 14px;
-    width: auto;
-    max-width: none;
+    left: 14px !important;
+    width: auto !important;
+    max-width: none !important;
     height: auto !important;
     min-height: 0 !important;
   }
@@ -5635,6 +5635,52 @@ body.cosloom-concept-cinematic-costume-house .route-page-hero h1 {
 
   body.cosloom-concept-cinematic-costume-house .hero__trust-line {
     margin-top: 18px;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .cosloom-home > .concept-section.section-shell {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: var(--site-pad);
+    padding-left: var(--site-pad);
+    overflow: hidden;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .cosloom-home .section-intro--split,
+  body.cosloom-concept-cinematic-costume-house .cosloom-home .section-intro--editorial.section-intro--split {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .cosloom-home .section-intro--split > div,
+  body.cosloom-concept-cinematic-costume-house .cosloom-home .section-intro--split > p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .cosloom-home .section-intro--split h2,
+  body.cosloom-concept-cinematic-costume-house .cosloom-home .section-intro--editorial h2 {
+    max-width: min(100%, 11.8ch);
+    font-size: clamp(2rem, 8.4vw, 2.42rem);
+    line-height: 1.06;
+    overflow-wrap: normal;
+    word-break: normal;
+    text-wrap: balance;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .cosloom-home .section-intro--split > p,
+  body.cosloom-concept-cinematic-costume-house .cosloom-home .editorial-section-copy {
+    max-width: min(100%, 33ch);
+    overflow-wrap: normal;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .start-path-card,
+  body.cosloom-concept-cinematic-costume-house .starting-card,
+  body.cosloom-concept-cinematic-costume-house .studio-standard-card {
+    max-width: 100%;
   }
 }
 
