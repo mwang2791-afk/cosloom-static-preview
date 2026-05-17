@@ -5611,3 +5611,39 @@ body.cosloom-concept-cinematic-costume-house .route-page-hero h1 {
     max-width: min(100%, 31ch);
   }
 }
+
+/* B Final v2 mobile hero correction: keep the cinematic card compact. */
+@media (max-width: 760px) {
+  body.cosloom-concept-cinematic-costume-house .concept-hero {
+    min-height: 760px;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .concept-hero__copy {
+    top: 118px !important;
+    right: 14px;
+    bottom: auto !important;
+    left: 14px;
+    width: auto;
+    max-width: none;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .concept-hero__copy h1 {
+    font-size: clamp(3.15rem, 14vw, 4.1rem);
+  }
+
+  body.cosloom-concept-cinematic-costume-house .hero__trust-line {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 430px) {
+  body.cosloom-concept-cinematic-costume-house .concept-hero {
+    min-height: 748px;
+  }
+
+  body.cosloom-concept-cinematic-costume-house .concept-hero__copy {
+    top: 108px !important;
+  }
+}
